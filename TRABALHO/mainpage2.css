@@ -1,0 +1,195 @@
+.principal{
+    columns: auto;
+}
+
+.headerConfig{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0) ) no-repeat;
+        margin: 0px;
+        top: 0px;
+        left: 0px;
+        position: fixed ;
+        width: 100%;
+        height: 15%;
+        display: block;
+        padding: 20px 0;
+
+}
+.insideHeader{
+background-color: rgba(0, 0, 0, 0);
+height: 100%;
+display: block;
+margin: 0 auto;
+
+
+}
+.logoContainer{
+    height: 100%;
+    display: table;
+    float: left;
+
+}
+.logoContainer a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3rem;
+    padding: 35px 10px 20px 40px;
+}
+.navigationHeader{
+    float: right;
+    height: 100%;
+}
+.navigationHeader a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.navigationHeader a:last-child{
+ 
+padding-right: 20px;
+}
+.navigationHeader a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    
+    padding-left: 20px;
+}
+
+.MainPage-body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(4, 0, 10) , rgb(47, 0, 24) ) no-repeat fixed;
+}
+
+.slider{
+top: 0;
+margin: 0 auto;
+width: 100%;
+height: auto;
+overflow: hidden;
+
+padding: 0 !important;
+}
+.slides{
+width: 400%;
+height: auto;
+display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 25%;
+    height: auto;
+                  position: top;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+}
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div{
+ border: 2px solid white;
+ padding: 10px;
+ border-radius: 50%;
+ cursor: pointer;
+ transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div:not(:last-child){
+
+    margin-right: 40px;
+
+}
+
+
+.manual-btn{
+border: 2px solid rgb(255, 255, 255);
+padding: 10px;
+border-radius: 50%;
+cursor:pointer;
+transition: 1s;
+
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+
+}
+#radio2:checked ~ .first {
+margin-left: -25%;
+}
+#radio3:checked ~ .first {
+margin-left: -50%;
+}
+#radio4:checked ~ .first {
+margin-left: -75%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+
+.menu{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+width: 100%;
+height: 5rem;
+columns: auto;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.menuIMG img{
+   
+    max-width: 33%;
+ width: auto;
+ height: auto;
+ border-radius: 50%;
+}
+.menuIMG img:last-child{
+    padding-right: 0px;
+}
